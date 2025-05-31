@@ -1,0 +1,97 @@
+Api con Express con typeScript y Mysql
+
+
+Pasos para la creación del proyecto
+
+Crear la carpeta: mi_proyecto
+Comando con inicio por defecto: npm init -y
+Nota: nos va crear el package.json
+Comando para instalar typescript: npm install typescript -D
+Nota: Te crea la carpeta: node_modules
+Comando para ejecutar: npx tsc –init
+Nota: nos va crear el archivo: tsconfig.json 
+
+ Estructura: 
+Vamos a crear la carpeta: src
+Creamos el archivo: index.ts dentro de la carpeta src
+     
+ Instalación: 
+Comando para instalar express: npm i express
+Ejecutar comando: npm i morgan
+comando  de instalación: npm i @types/express -D
+Comando: npm i @types/morgan -D
+Comando: npm i mysql2
+Comando: npm i types/mysql2 -D
+
+ Programación:
+Vamos a programar el archivo src/index.ts
+
+Configuracion de: tsconfig.json
+
+   Linea 14 “target“: “ES2016” ? Lo pones en mayuscula 
+   
+   Linea 62  "outDir": "./dist",   ? Lo descomentamos y colocamos el dist
+
+  Ejecutamos el comando: npx tsc
+  Nota: nos va crear el archivo: index.js dentro dist
+   
+ Escribir el comando: npm install nodemon -D
+ Vamos a crear un archivo dentro de src/app.ts
+
+ Vamos a programar el app.ts
+ Vamos a programar el index.ts
+
+Comando: npx tsc
+
+Con eso nos va crear el archivo app.js dentro de la carpeta dist/app.js
+> Escribir este comando para convertir: npx tsc
+> Escribir este comando: node dist/index.js
+
+Vamos a programar:  package.json 
+Nota: Vamos a modificar el “Scripts” : { 
+   “test” : “test de prueba”
+}
+
+
+> Ejecutamos el comando: npm i ts-node -D
+> Ejecutamos el comando: npm run dev
+   Nota: vamos al navegador y probar el: localhost:3000
+   Paras el servidor web con: ctrl + c
+
+Estructura: 
+
+ > vamos a crear el archivo: src/database.ts
+
+    Vamos a programar el archivo: database.ts
+
+ > vamos a crear la carpeta y archivo: sql/database.sql
+ 
+> programamos el archivo: database.sql
+
+> Abrimos el xampp y pegamos el código SQL del archivo: database.sql
+
+> ejecutamos el codigo sql en ql mysql
+ 
+
+—-----------------------------------------------------------------
+> Vamos a crear una carpeta dentro de SRC:
+
+SRC:
+> routes/ -> (index.routes.ts, post.routes.ts )
+> controllers/ -> (index.controller.ts, post.controller.ts )
+> interface
+
+Recuerda programar el app.ts , index.routes.ts, index.controller.ts, post.routes.ts 
+Vamos a programar y daremos el comando:  npm run dev
+Escribir: npm run dev
+
+Vamos al postman
+
+Usar json para insertar datos
+
+Cuando termines probar todo los apis 
+
+Vas a generar el instalador o software para ejecutarlo en el servidor:
+Comando: npm run build
+
+Vas ejecutar la imagen generado con: node dist/index.js
