@@ -1,5 +1,5 @@
 export interface Post {
-    id?: string;
+    id?: BigInteger;
     title: string;
     descripcion: string;
     image_url: string;

@@ -20,6 +20,9 @@ export async function createPost(req: Request, res: Response): Promise<void> {
         const newPost: Post = req.body;
         const conn = await connect();
         await conn.query('INSERT INTO posts SET ?', [newPost]);
+        res.json({
+           message: 'Datos grabados'
+        });
     } catch (error) {
         res.status(500).json({ error: "Error al crear el post" });
     }
